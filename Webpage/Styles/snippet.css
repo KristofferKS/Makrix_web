@@ -1,0 +1,79 @@
+/* Initial state: Completely off-screen */
+.side-menu {
+    position: fixed;
+    right: -160px; /* Move the menu off-screen to the right */
+    top: 250px;
+    z-index: 1000;
+    transition: all 0.9s ease; /* Smooth transition for visibility and position */
+    visibility: hidden; /* Initially hidden */
+}
+
+/* Visible state: Fully on-screen */
+.side-menu.visible {
+    right: 0; /* Bring the menu fully on-screen */
+    visibility: visible; /* Make it visible */
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s ease;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.5s ease;
+    overflow: hidden;
+    width: 160px;
+}
+
+.menu-item:nth-child(1) {
+    background-color: #1c0f4c;
+}
+
+.menu-item:nth-child(2) {
+    background-color: #352470;
+}
+
+.item-content {
+    display: flex;
+    align-items: center;
+    padding: 20px 15px;
+    width: 100%;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.icon-text {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/* Hidden state styling (completely off-screen) */
+.hidden .menu-item {
+    transform: translateX(160px);
+}
+
+/* Collapsed state styling (icons only) */
+.collapsed .menu-item {
+    transform: translateX(110px);
+}
+
+.collapsed .menu-item:hover {
+    transform: translateX(0);
+}

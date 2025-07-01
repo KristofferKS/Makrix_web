@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IoT Network Threat Mapping</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="Styles/risk_map.css">
+  <link rel="stylesheet" href="Styles/banner.css">
+
+</head>
+<body>
+  <div class="container py-5">
+    <div class="risk-header">
+      <h1><i class="fas fa-shield-alt"></i> IoT Network Threat Mapping</h1>
+      <p class="mb-0">Comprehensive analysis of vulnerabilities across different sectors</p>
+    </div>
+    
+    <div class="row g-4">
+      <!-- Industrial Sector -->
+      <div class="col-md-6 col-lg-4">
+        <div class="threat2-card">
+          <div class="card-head bg-danger">
+            <i class="fas fa-industry"></i> Industrial Sector
+          </div>
+          <div class="card-bod">
+            <p>Critical infrastructure and industrial control systems face unique IoT security challenges.</p>
+            
+            <div class="threat-scale">
+              <span class="threat-scale-label">Impact:</span>
+              <div class="progress">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 95%"></div>
+              </div>
+              <span class="ms-2">95%</span>
+            </div>
+            
+            <div class="threat-scale">
+              <span class="threat-scale-label">Likelihood:</span>
+              <div class="progress">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 80%"></div>
+              </div>
+              <span class="ms-2">80%</span>
+            </div>
+            
+            <div class="badge-container">
+              <span class="badge bg-warning">Manufacturing</span>
+              <span class="badge bg-warning">Energy</span>
+              <span class="badge bg-danger">SCADA Systems</span>
+              <span class="badge bg-danger">ICS</span>
+            </div>
+          </div>
+          
+          <div class="threat-details">
+            <h5><i class="fas fa-exclamation-triangle"></i> Industrial Sector Threats</h5>
+            <hr>
+            <ul>
+              <li><strong>Industrial Espionage:</strong> Competitors or nation-states targeting proprietary manufacturing processes</li>
+              <li><strong>Production Sabotage:</strong> Manipulation of control systems leading to product defects or equipment damage</li>
+              <li><strong>Safety System Compromise:</strong> Disabling critical safety mechanisms causing physical harm</li>
+              <li><strong>Supply Chain Disruption:</strong> Attacks against logistics and inventory systems</li>
+              <li><strong>Legacy Equipment:</strong> Outdated control systems with no security updates</li>
+            </ul>
+            <p><strong>Notable Attack Vector:</strong> Insecure OT/IT boundary integrations</p>
+            <p><strong>Key Vulnerability:</strong> Operational technology not designed with security in mind</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Smart Homes -->
+      <div class="col-md-6 col-lg-4">
+        <div class="threat2-card">
+          <div class="card-head bg-primary">
+            <i class="fas fa-home"></i> Private Homes
+          </div>
+          <div class="card-bod">
+            <p>Smart home devices create potential privacy and security risks in residential settings.</p>
+            
+            <div class="threat-scale">
+              <span class="threat-scale-label">Impact:</span>
+              <div class="progress">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 70%"></div>
+              </div>
+              <span class="ms-2">70%</span>
+            </div>
+            
+            <div class="threat-scale">
+              <span class="threat-scale-label">Likelihood:</span>
+              <div class="progress">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%"></div>
+              </div>
+              <span class="ms-2">90%</span>
+            </div>
+            
+            <div class="badge-container">
+              <span class="badge bg-success">Smart Appliances</span>
+              <span class="badge bg-success">Security Systems</span>
+              <span class="badge bg-warning">Voice Assistants</span>
+              <span class="badge bg-danger">Cameras</span>
+            </div>
+          </div>
+          
+          <div class="threat-details">
+            <h5><i class="fas fa-exclamation-triangle"></i> Private Home Threats</h5>
+            <hr>
+            <ul>
+              <li><strong>Privacy Invasion:</strong> Unauthorized access to cameras, microphones, and personal data</li>
+              <li><strong>Physical Security Breach:</strong> Compromised smart locks or security systems</li>
+              <li><strong>Network Penetration:</strong> IoT devices as entry points to home networks</li>
+              <li><strong>Botnet Recruitment:</strong> Devices enlisted in DDoS attacks</li>
+              <li><strong>Voice Assistant Manipulation:</strong> Unauthorized purchases or commands</li>
+            </ul>
+            <p><strong>Notable Attack Vector:</strong> Default passwords and weak authentication</p>
+            <p><strong>Key Vulnerability:</strong> Consumer lack of security awareness and configuration knowledge</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Public Institutions -->
+      <div class="col-md-6 col-lg-4">
+        <div class="threat2-card">
+          <div class="card-head bg-success">
+            <i class="fas fa-university"></i> Public Institutions
+          </div>
+          <div class="card-bod">
+            <p>Government facilities, schools, and public services are increasingly dependent on IoT systems.</p>
+            
+            <div class="threat-scale">
+              <span class="threat-scale-label">Impact:</span>
+              <div class="progress">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 85%"></div>
+              </div>
+              <span class="ms-2">85%</span>
+            </div>
+            
+            <div class="threat-scale">
+              <span class="threat-scale-label">Likelihood:</span>
+              <div class="progress">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 75%"></div>
+              </div>
+              <span class="ms-2">75%</span>
+            </div>
+            
+            <div class="badge-container">
+              <span class="badge bg-success">Government</span>
+              <span class="badge bg-success">Education</span>
+              <span class="badge bg-warning">Public Safety</span>
+              <span class="badge bg-danger">Critical Services</span>
+            </div>
+          </div>
+          
+          <div class="threat-details">
+            <h5><i class="fas fa-exclamation-triangle"></i> Public Institution Threats</h5>
+            <hr>
+            <ul>
+              <li><strong>Data Breaches:</strong> Exposure of sensitive citizen/student information</li>
+              <li><strong>Service Disruption:</strong> Attacks affecting public services availability</li>
+              <li><strong>Surveillance System Compromise:</strong> Disabled or manipulated security cameras</li>
+              <li><strong>Building Control Systems:</strong> HVAC, access control, or emergency systems attacks</li>
+              <li><strong>Ransomware Propagation:</strong> IoT as entry points for broader network attacks</li>
+            </ul>
+            <p><strong>Notable Attack Vector:</strong> Budget constraints leading to inadequate security measures</p>
+            <p><strong>Key Vulnerability:</strong> Inconsistent security policies and fragmented IT governance</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Healthcare -->
+      <div class="col-md-6 col-lg-4">
+        <div class="threat2-card">
+          <div class="card-head bg-info">
+            <i class="fas fa-hospital"></i> Healthcare
+          </div>
+          <div class="card-bod">
+            <p>Medical devices and healthcare systems face unique security challenges with life-critical implications.</p>
+            
+            <div class="threat-scale">
+              <span class="threat-scale-label">Impact:</span>
+              <div class="progress">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%"></div>
+              </div>
+              <span class="ms-2">100%</span>
+            </div>
+            
+            <div class="threat-scale">
+              <span class="threat-scale-label">Likelihood:</span>
+              <div class="progress">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 70%"></div>
+              </div>
+              <span class="ms-2">70%</span>
+            </div>
+            
+            <div class="badge-container">
+              <span class="badge bg-success">Medical Devices</span>
+              <span class="badge bg-success">Patient Monitoring</span>
+              <span class="badge bg-warning">Hospital Systems</span>
+              <span class="badge bg-danger">Patient Records</span>
+            </div>
+          </div>
+          
+          <div class="threat-details">
+            <h5><i class="fas fa-exclamation-triangle"></i> Healthcare Threats</h5>
+            <hr>
+            <ul>
+              <li><strong>Patient Safety Risk:</strong> Manipulation of life-support or medication delivery systems</li>
+              <li><strong>Medical Data Theft:</strong> PHI breaches leading to identity theft or insurance fraud</li>
+              <li><strong>Diagnostic Equipment Tampering:</strong> Altered readings leading to misdiagnosis</li>
+              <li><strong>Treatment Disruption:</strong> Attacks affecting availability of critical systems</li>
+              <li><strong>Legacy Medical Devices:</strong> Outdated equipment with no security updates</li>
+            </ul>
+            <p><strong>Notable Attack Vector:</strong> Connected medical devices with inadequate security design</p>
+            <p><strong>Key Vulnerability:</strong> Tension between security measures and immediate clinical access needs</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Smart Cities -->
+      <div class="col-md-6 col-lg-4">
+        <div class="threat2-card">
+          <div class="card-head bg-secondary">
+            <i class="fas fa-city"></i> Smart Cities
+          </div>
+          <div class="card-bod">
+            <p>Urban infrastructure and municipal services increasingly rely on connected IoT systems.</p>
+            
+            <div class="threat-scale">
+              <span class="threat-scale-label">Impact:</span>
+              <div class="progress">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%"></div>
+              </div>
+              <span class="ms-2">90%</span>
+            </div>
+            
+            <div class="threat-scale">
+              <span class="threat-scale-label">Likelihood:</span>
+              <div class="progress">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 65%"></div>
+              </div>
+              <span class="ms-2">65%</span>
+            </div>
+            
+            <div class="badge-container">
+              <span class="badge bg-success">Traffic Systems</span>
+              <span class="badge bg-success">Utility Grids</span>
+              <span class="badge bg-warning">Public WiFi</span>
+              <span class="badge bg-danger">Emergency Services</span>
+            </div>
+          </div>
+          
+          <div class="threat-details">
+            <h5><i class="fas fa-exclamation-triangle"></i> Smart City Threats</h5>
+            <hr>
+            <ul>
+              <li><strong>Traffic Control Manipulation:</strong> Disrupted traffic signals causing gridlock or accidents</li>
+              <li><strong>Utility Grid Attacks:</strong> Power, water, or gas distribution disruption</li>
+              <li><strong>Mass Surveillance:</strong> Compromised city-wide camera networks</li>
+              <li><strong>Emergency Response Systems:</strong> Delays or disruptions to critical services</li>
+              <li><strong>Public Transportation:</strong> Affected scheduling, ticketing, or safety systems</li>
+            </ul>
+            <p><strong>Notable Attack Vector:</strong> Widely distributed sensors with physical access vulnerabilities</p>
+            <p><strong>Key Vulnerability:</strong> Complex multi-vendor environments with integration challenges</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Transportation -->
+      <div class="col-md-6 col-lg-4">
+        <div class="threat2-card">
+          <div class="card-head bg-warning text-dark">
+            <i class="fas fa-car"></i> Transportation
+          </div>
+          <div class="card-bod">
+            <p>Connected vehicles, traffic systems, and logistics networks face unique security challenges.</p>
+            
+            <div class="threat-scale">
+              <span class="threat-scale-label">Impact:</span>
+              <div class="progress">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 95%"></div>
+              </div>
+              <span class="ms-2">95%</span>
+            </div>
+            
+            <div class="threat-scale">
+              <span class="threat-scale-label">Likelihood:</span>
+              <div class="progress">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 60%"></div>
+              </div>
+              <span class="ms-2">60%</span>
+            </div>
+            
+            <div class="badge-container">
+              <span class="badge bg-success">Logistics</span>
+              <span class="badge bg-warning">Connected Vehicles</span>
+              <span class="badge bg-warning">Fleet Management</span>
+              <span class="badge bg-danger">Autonomous Systems</span>
+            </div>
+          </div>
+          
+          <div class="threat-details">
+            <h5><i class="fas fa-exclamation-triangle"></i> Transportation Threats</h5>
+            <hr>
+            <ul>
+              <li><strong>Vehicle System Control:</strong> Unauthorized access to braking, steering, or acceleration</li>
+              <li><strong>Location Tracking:</strong> Privacy violations through vehicle location data</li>
+              <li><strong>Fleet Disruption:</strong> Logistics and delivery system manipulation</li>
+              <li><strong>Traffic Infrastructure:</strong> Tampering with traffic lights or highway management systems</li>
+              <li><strong>Autonomous Vehicle Exploitation:</strong> Sensor data manipulation affecting navigation</li>
+            </ul>
+            <p><strong>Notable Attack Vector:</strong> Vehicle-to-everything (V2X) communication channels</p>
+            <p><strong>Key Vulnerability:</strong> Complex supply chains with multiple vendors and components</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="legend mt-4">
+      <h5>Threat Level Legend</h5>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="legend-item">
+            <div class="legend-color bg-danger"></div>
+            <span>Critical (80-100%)</span>
+          </div>
+          <div class="legend-item">
+            <div class="legend-color bg-warning"></div>
+            <span>Moderate (50-79%)</span>
+          </div>
+          <div class="legend-item">
+            <div class="legend-color bg-success"></div>
+            <span>Low (0-49%)</span>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <p class="small mb-0">This threat mapping provides a visualization of IoT security vulnerabilities across different sectors. Hover over each card to see detailed information about sector-specific threats, attack vectors, and key vulnerabilities.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

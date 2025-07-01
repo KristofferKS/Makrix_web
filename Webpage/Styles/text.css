@@ -1,0 +1,32 @@
+
+.txt-blue {
+    color: #3154bd;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.txt-blue3 {
+    color: #1c00a7;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.txt-blue2 {
+    color: #4e73df;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.txt-white {
+    color: #fff;
+}
+
+.big-bold {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.txt-header {
+    font-size: 40px;
+    font-weight: bold;
+}

@@ -1,0 +1,31 @@
+.team-member img {
+    border: none; /* Remove any border */
+    box-shadow: none; /* Remove any shadow if applied */
+    width: 170px; /* Ensure consistent size */
+    height: 170px;
+    object-fit: cover; /* Ensure the image fits properly */
+    margin-bottom: 10px;
+}
+
+.team-member h4 {
+  font-size: 1.25rem;
+  margin-bottom: 5px;
+}
+
+.team-member p {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.team-member a {
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.team-member a:hover {
+  text-decoration: underline;
+}
+
+.no-border {
+  border: none; /* Remove border */
+}

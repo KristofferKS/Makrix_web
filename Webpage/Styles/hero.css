@@ -1,0 +1,136 @@
+/* Hero Section (Startpage) */
+.hero {
+    position: relative;
+    background-color: #1c0f4c; /* Fallback color */
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: left;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); /* Add shadow at the bottom */
+    clip-path: ellipse(90% 100% at 50% -1%); /* Add a rounded downward edge */
+    /*clip-path: ellipse(90% 100% at 50% -1%);*/ /* Add a rounded downward edge */
+    overflow: hidden; /* Ensure content stays within the clipped area */
+    z-index: 20;
+    margin-bottom: 50px;
+    padding: 120px 0 50px 0;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Style for the watermark */
+.bg-watermark {
+    position: absolute;
+    top: 100%; /* Center vertically */
+    left: 10%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+    width: 150%; /* Adjust size of the watermark */
+    opacity: 0.6; /* Make it faint */
+    filter: grayscale(50%) brightness(90%); /* Make it greyish and darker */
+    z-index: -1; /* Ensure it appears above the hero background but below content */
+    pointer-events: none; /* Prevent interaction with the watermark */
+}
+
+
+
+.hero-content {
+    position: relative;
+    max-width: 600px;
+    z-index: 2; /* Ensure hero content appears above the watermark */
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.6rem;
+}
+
+.hero-buttons .btn {
+    margin-right: 10px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+@media (max-width: 480px) {
+    .hero {
+        flex-direction: column;
+        clip-path: ellipse(100% 85% at 50% 100%); /* Adjust for smaller screens */
+    }
+}
+
+
+
+.hero2 {
+    position: relative;
+    background-color: #1c0f4c; /* Fallback color */
+    background-image: linear-gradient(135deg, #1c0f4c 20%, #4e73df 100%);
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: left;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Add shadow at the bottom */
+    /*clip-path: ellipse(90% 100% at 50% -1%);*/ /* Add a rounded downward edge */
+    overflow: hidden; /* Ensure content stays within the clipped area */
+    z-index: 20;
+    padding-top:50px;
+}
+.hero2 h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.hero2 p {
+    font-size: 1.6rem;
+}
+
+
+/* Hero Section for Learn Page */
+.learn-hero {
+    position: relative;
+    background-color: #1c0f4c;
+    background-image: linear-gradient(135deg, #1c0f4c 20%, #4e73df 100%);
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: left;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    clip-path: ellipse(90% 100% at 50% -1%);
+    overflow: hidden;
+    z-index: 20;
+    margin-bottom: 50px;
+    padding: 70px 0 50px 0;
+}
+
+.learn-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+}
+
+.learn-hero h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.learn-hero p {
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}

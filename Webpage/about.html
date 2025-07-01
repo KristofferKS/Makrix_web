@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MAKRIX Security - About Us</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="Styles/styles.css" />
+  <link rel="stylesheet" href="Styles/member.css" />
+  <link rel="stylesheet" href="Styles/text.css" />
+  <link rel="stylesheet" href="Styles/journey.css" />
+  <link rel="stylesheet" href="Styles/hero.css" />
+  <script src="scripts/script.js" defer></script>
+
+</head>
+<body>
+  <!-- Placeholder for the header -->
+  <div id="header"></div>
+
+  <main>
+
+    <section class="about-us py-5  shadow-sm">
+      <div class="container py-5 mt-5">
+        <h1 class="text-center display-4 mb-5">Meet Our Team</h1>
+        <div class="row text-center">
+          <!-- Co-Founder 1 -->
+          <div class="col-md-3">
+            <div class="team-member no-border">
+              <img src="Images/no-profile-picture-icon.jpg" alt="Co-Founder 1" class="img-fluid rounded-circle mb-3">
+              <h4 class="">Kristian Lakjær</h4>
+              <p class="text-muted">Co-Founder</p>
+              <a href="mailto:kristian@makrixsecurity.com" class="text-primary">kristian@makrixsecurity.com</a>
+            </div>
+          </div>
+          <!-- Co-Founder 2 -->
+          <div class="col-md-3">
+            <div class="team-member no-border">
+              <img src="Images/no-profile-picture-icon.jpg" alt="Co-Founder 2" class="img-fluid rounded-circle mb-3">
+              <h4 class="">Kristoffer Kuntz Skovfo</h4>
+              <p class="text-muted">Co-Founder</p>
+              <a href="mailto:kristoffer@makrixsecurity.com" class="text-primary">kristoffer@makrixsecurity.com</a>
+            </div>
+          </div>
+          <!-- Co-Founder 3 -->
+          <div class="col-md-3">
+            <div class="team-member no-border">
+              <img src="Images/no-profile-picture-icon.jpg" alt="Co-Founder 3" class="img-fluid rounded-circle mb-3">
+              <h4 class="">Madelaine Natasha Jensen</h4>
+              <p class="text-muted">Co-Founder</p>
+              <a href="mailto:madelaine@makrixsecurity.com" class="text-primary">madelaine@makrixsecurity.com</a>
+            </div>
+          </div>
+          <!-- Co-Founder 4 -->
+          <div class="col-md-3">
+            <div class="team-member no-border">
+              <img src="Images/no-profile-picture-icon.jpg" alt="Co-Founder 4" class="img-fluid rounded-circle mb-3">
+              <h4 class="">Mathias Mikkelsen Gissel</h4>
+              <p class="text-muted">Co-Founder</p>
+              <a href="mailto:mathias@makrixsecurity.com" class="text-primary">mathias@makrixsecurity.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="journey-section bg-beige">
+      <div class="container">
+          <div class="section-title">
+              <h2 class="display-4">Our Journey</h2>
+              <p class="text-muted">Follow our path of growth and achievements throughout the years</p>
+          </div>
+          
+          <div class="row justify-content-center">
+              <div class="col-md-8">
+                  <div class="journey-container">
+                      <!-- Continuous Arrow -->
+                      <div class="continuous-arrow"></div>
+                      
+                      <!-- Journey Item 1 -->
+                      <div class="journey-item">
+                          <div class="achievement-box">
+                              <div class="achievement-year">2018</div>
+                              <h3 class="achievement-title">Company Founded</h3>
+                              <p>Our company was established with a vision to revolutionize the industry. Starting with just 5 team members, we began our journey with determination and innovation.</p>
+                          </div>
+                      </div>
+                      
+                      <!-- Journey Item 2 -->
+                      <div class="journey-item">
+                          <div class="achievement-box">
+                              <div class="achievement-year">2019</div>
+                              <h3 class="achievement-title">First Major Client</h3>
+                              <p>We secured our first major client and delivered exceptional results that exceeded expectations. This milestone helped establish our reputation in the market.</p>
+                          </div>
+                      </div>
+                      
+                      <!-- Journey Item 3 -->
+                      <div class="journey-item">
+                          <div class="achievement-box">
+                              <div class="achievement-year">2020</div>
+                              <h3 class="achievement-title">Expansion to New Markets</h3>
+                              <p>Despite global challenges, we expanded our operations to three new countries and doubled our team size, demonstrating resilience and adaptability.</p>
+                          </div>
+                      </div>
+                      
+                      <!-- Journey Item 4 -->
+                      <div class="journey-item">
+                          <div class="achievement-box">
+                              <div class="achievement-year">2022</div>
+                              <h3 class="achievement-title">Industry Award Winner</h3>
+                              <p>Our innovative approach was recognized with the prestigious Industry Excellence Award, placing us among the top performers in our field.</p>
+                          </div>
+                      </div>
+                      
+                      <!-- Journey Item 5 -->
+                      <div class="journey-item">
+                          <div class="achievement-box">
+                              <div class="achievement-year">2024</div>
+                              <h3 class="achievement-title">Reached 1 Million Customers</h3>
+                              <p>We proudly reached the milestone of serving over one million customers worldwide, with a satisfaction rate of 98%. Our commitment to excellence continues to drive us forward.</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script>
+      // Add animation to make journey items appear as you scroll down
+      document.addEventListener('DOMContentLoaded', function() {
+          const journeyItems = document.querySelectorAll('.journey-item');
+          
+          function checkScroll() {
+              journeyItems.forEach(item => {
+                  const itemPosition = item.getBoundingClientRect().top;
+                  const screenPosition = window.innerHeight / 1.2;
+                  
+                  if (itemPosition < screenPosition) {
+                      item.style.opacity = '1';
+                      item.style.transform = 'translateY(0)';
+                  }
+              });
+          }
+          
+          // Set initial styles
+          journeyItems.forEach(item => {
+              item.style.opacity = '0';
+              item.style.transform = 'translateY(30px)';
+              item.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+          });
+          
+          // Check positions on load and scroll
+          checkScroll();
+          window.addEventListener('scroll', checkScroll);
+      });
+  </script>
+
+
+
+  </main>
+
+  <!-- Placeholder for the footer -->
+  <div id="footer"></div>
+
+</body>
+</html>

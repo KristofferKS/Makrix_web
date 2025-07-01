@@ -1,0 +1,52 @@
+/* Hover effect: Pops out of the screen with shadow */
+.pop-out-effect {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.5s ease, color 0.5s ease;
+    border-radius: 10px; /* Adds rounded corners */
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+.pop-out-effect:hover {
+    transform: translateY(-10px); /* Moves the element slightly out of the screen */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Adds a shadow effect */
+    background-color: #1c0f4c; /* Changes background to blue */
+    color: white; /* Changes text color to white */
+}
+
+.pop-out-effect:hover h1, 
+.pop-out-effect:hover h2, 
+.pop-out-effect:hover h3, 
+.pop-out-effect:hover h4, 
+.pop-out-effect:hover h5, 
+.pop-out-effect:hover h6 {
+    color: white; /* Ensures headers are white */
+}
+
+.pop-out-effect:hover .btn {
+    background-color: #ffffff; /* Bootstrap primary button background color */
+    color: #1c0f4c; /* Ensure the text color is white */
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+}
+
+.pop-out-effect .btn:hover {
+    background-color: #dfe7ff; /* Slightly darker shade of Bootstrap primary color */
+    border-color: #1c0f4c; /* Match the border color */
+    color: #1c0f4c; /* Keep the text color white */
+    transition: background-color 0.2s ease, border-color 0.2s ease; /* Smooth transition */
+}
+
+.btn-blue {
+    background-color: #2c5ae6; /* Blue background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding for the button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+.btn-blue:hover {
+    background-color: #fff; /* Darker blue on hover */
+    color: #1c0f4c; /* White text on hover */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}

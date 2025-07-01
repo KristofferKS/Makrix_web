@@ -1,0 +1,48 @@
+
+.specs-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+}
+
+.specs-table th, .specs-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.specs-table th {
+    background-color: #f9f9f9;
+    color: #1a0a38;
+}
+
+.benefits {
+    margin: 4rem 0;
+}
+
+.benefit-item {
+    display: flex;
+    margin-bottom: 2rem;
+    align-items: flex-start;
+}
+
+.benefit-icon {
+    flex: 0 0 50px;
+    height: 50px;
+    background-color: #0074e0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    margin-right: 1.5rem;
+}
+
+.benefit-text {
+    flex: 1;
+}
+
+.benefit-text h3 {
+    margin-bottom: 0.5rem;
+}

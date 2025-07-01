@@ -1,0 +1,381 @@
+/* Enhanced Learn Page Styles */
+
+/* Hero Section for Learn Page */
+.learn-hero {
+    position: relative;
+    background-color: #1c0f4c;
+    background-image: linear-gradient(135deg, #1c0f4c 0%, #4e73df 100%);
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: left;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    clip-path: ellipse(90% 100% at 50% -1%);
+    overflow: hidden;
+    z-index: 20;
+    margin-bottom: 50px;
+}
+
+.learn-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+}
+
+.learn-hero h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.learn-hero p {
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+/* Interactive Info Boxes */
+.info-box {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.info-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Section Divider with Animation */
+.section-divider {
+    height: 4px;
+    background: linear-gradient(90deg, transparent, #4e73df, transparent);
+    margin: 40px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.section-divider::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);
+    animation: shine 3s infinite;
+}
+
+@keyframes shine {
+    to {
+        left: 100%;
+    }
+}
+
+/* Enhanced Threat Icons */
+.threat-icon {
+    width: 100px;
+    height: 100px;
+    background-color: #f8f9fa;
+    color: #4e73df;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 38px;
+    margin: 0 auto 25px auto;
+    border: 2px solid #4e73df;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.threat-icon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(78, 115, 223, 0.2), transparent);
+    transition: all 0.5s ease;
+}
+
+.threat-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(78, 115, 223, 0.5);
+    color: white;
+    background-color: #4e73df;
+}
+
+.threat-icon:hover::before {
+    left: 100%;
+    transition: all 0.5s ease;
+}
+
+/* Enhanced Statistics Visualization */
+.stat-box {
+    background: linear-gradient(135deg, #4e73df 0%, #224abe 100%);
+    color: white;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.stat-box:hover {
+    transform: translateY(-10px) rotateX(5deg);
+    box-shadow: 0 15px 35px rgba(78, 115, 223, 0.3);
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.stat-description {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* Case Study Cards */
+.case-study {
+    background: linear-gradient(to bottom, #f1f5fe, #ffffff);
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 25px;
+    transition: all 0.3s ease;
+    border-left: 5px solid #4e73df;
+    position: relative;
+    overflow: hidden;
+}
+
+.case-study::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, #4e73df, transparent);
+}
+
+.case-study:hover {
+    transform: translateX(10px);
+    box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Solution Items with Interactive Elements */
+.solution-item {
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border-left: 3px solid transparent;
+}
+
+.solution-item:hover {
+    background-color: #ffffff;
+    border-left: 3px solid #4e73df;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transform: translateX(5px);
+}
+
+.solution-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    background-color: #4e73df;
+    border-radius: 50%;
+    margin-right: 15px;
+    transition: all 0.3s ease;
+}
+
+.solution-item:hover .solution-icon {
+    transform: rotate(360deg);
+}
+
+/* Interactive Risk Assessment Tool */
+.risk-assessment-tool {
+    background-color: #f1f5fe;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 40px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.risk-slider {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.risk-result {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+/* Security Checklist */
+.security-checklist {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.checklist-item {
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.checklist-item:hover {
+    background-color: #edf2ff;
+    transform: translateX(5px);
+}
+
+.checklist-checkbox {
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.checklist-text {
+    flex-grow: 1;
+}
+
+.checklist-item.checked {
+    background-color: #e8f5e9;
+    text-decoration: line-through;
+    opacity: 0.8;
+}
+
+/* Learning Progress Bar */
+.learn-progress-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    margin: 30px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.learn-progress-bar {
+    width: 0;
+    height: 20px;
+    background: linear-gradient(90deg, #4e73df, #224abe);
+    border-radius: 5px;
+    transition: width 0.5s ease;
+}
+
+.learn-progress-text {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/* Expandable Content Sections */
+.expandable-content {
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.expandable-header {
+    padding: 15px 20px;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.expandable-header:hover {
+    background-color: #edf2ff;
+}
+
+.expandable-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    padding: 0 20px;
+}
+
+.expandable-body.expanded {
+    max-height: 1000px;
+    padding: 20px;
+}
+
+.expandable-toggle {
+    transition: transform 0.3s ease;
+}
+
+.expandable-toggle.expanded {
+    transform: rotate(180deg);
+}
+
+/* Background Watermark */
+.learn-watermark {
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    background-image: url('Images/Watermark_logo.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.05;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .learn-hero {
+        height: 40vh;
+    }
+    
+    .learn-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .stat-box {
+        margin-bottom: 20px;
+    }
+    
+    .threat-icon {
+        width: 80px;
+        height: 80px;
+        font-size: 32px;
+    }
+}

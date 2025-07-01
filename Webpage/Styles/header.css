@@ -1,0 +1,74 @@
+/* Header Styles */
+header {
+    color: #fff;
+    padding: 20px 0;
+    position: fixed; /* Make the header stick to the top */
+    top: 0; /* Align it to the top of the screen */
+    left: 0;
+    width: 100%; /* Ensure it spans the full width of the screen */
+    z-index: 1000; /* Ensure it stays above other elements */
+    transition: background 0.3s ease; /* Smooth transition between states */
+}
+
+/* Default header style (when not over hero) */
+header.default-bg {
+    background-color: #1c0f4c;
+    background-image: linear-gradient(100deg, #1c0f4c 29%, #4e73df 100%);
+}
+
+/* Transparent style (when over hero) */
+header.transparent-bg {
+    background-color: transparent;
+    backdrop-filter: blur(5px); /* This creates a frosted glass effect */
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #cce6ff;
+}
+
+.logo {
+    height: 30px; width: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+}

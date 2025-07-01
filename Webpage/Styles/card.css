@@ -1,0 +1,132 @@
+.card-container {
+    position: relative;
+    background-color: rgba(190, 190, 175, 0.192);
+    overflow: hidden;
+}
+
+.custom-card {
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Default shadow */
+    overflow: hidden;
+    width: 100%; /* Ensure the card takes the full width of the column */
+    max-width: 350px; /* Optional: Limit the card width */
+    height: 450px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scaling and shadow */
+    position: relative;
+}
+
+.custom-card:hover {
+    transform: translateY(-10px) scale(1.05); /* Move up slightly and scale */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Add a stronger shadow */
+}
+
+.card-header {
+    text-align: center;
+    background-color: #014d44;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: height 0.5s;
+    border-radius: 16px !important; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow */
+}
+
+.card-text {
+    padding: 20px;
+    font-size: 1.2rem;
+    color: #333;
+    position: absolute; 
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    transition: bottom 0.5s;
+}
+
+.custom-card:hover .card-header {
+    height: 34%;
+}
+
+.custom-card:hover .card-text {
+    bottom: 0;
+}
+
+.card-header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-content {
+    padding: 20px;
+    text-align: center;
+}
+.card-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.card-content p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.card-1 {
+    background-color: #4363c4; /* Orange for alertness and innovation */
+}
+.card-2 {
+    background-color: #2e2c8f; /* Green for growth and harmony */
+}
+.card-3 {
+    background-color: #1c0f4c; /* Blue for trust and dependability */
+}
+
+
+
+.background-banner {
+    position: absolute;
+    width: 100%;
+    height: 300px; /* Shorter than the cards */
+    background-color: rgba(190, 190, 175, 0.192);
+    top: 50px; /* Adjust to be behind the cards */
+    z-index: -1; /* Ensures it stays behind the cards */
+}
+
+.number-card {
+    border-radius: 16px;
+    align-content: center;
+    background-color: rgba(228, 223, 213, 0.274); /* Dark green for a professional look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Default shadow */
+    overflow: hidden;
+    max-width: 350px; /* Optional: Limit the card width */
+    height: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scaling and shadow */
+}
+
+.numcard-header {
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold; 
+    color: #333;
+}
+
+.numcard-text {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+
+
+/*background-color: #ff9800;*/ /* Orange for alertness and innovation */
+
+
