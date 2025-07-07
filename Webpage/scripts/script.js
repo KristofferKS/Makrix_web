@@ -51,8 +51,8 @@ function initHeaderScroll() {
 
 // Load the header and footer components
 document.addEventListener("DOMContentLoaded", () => {
-    loadComponent('../Komponenter/footer.html', 'footer');
-    loadComponent('../Komponenter/header.html', 'header');
-    loadComponent('../Komponenter/risk_map.html', 'risk_map');
-    loadComponent('../Komponenter/snippet.html', 'snippet');
+    loadComponent('Komponenter/footer.html', 'footer');
+    loadComponent('Komponenter/header.html', 'header');
+    loadComponent('Komponenter/risk_map.html', 'risk_map');
+    loadComponent('Komponenter/snippet.html', 'snippet');
 });
